@@ -1,15 +1,15 @@
-function getComputerChoice(){
-    let randomNum = Math.random();
-
-    if (randomNum < 0.33)  {
-        return "Rock";
-    } else if (randomNum < 0.66){
-        return "Paper";
+function getComputerChoice() {
+    let num = Math.floor(Math.random() * 3);
+  
+    if (num === 0) {
+      return "rock";
+    } else if (num === 1) {
+      return "paper";
     } else {
-        return "Scissors";
+      return "scissors";
     }
-    }
+  }
 
-    console.log(getComputerChoice());
-    console.log(getComputerChoice());
-    console.log(getComputerChoice());
+  console.log(getComputerChoice());
+  console.log(getComputerChoice());
+  console.log(getComputerChoice());
